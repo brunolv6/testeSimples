@@ -1,6 +1,7 @@
-var gulp = require('gulp');
+const gulp = require('gulp');
 // Requires the gulp-sass plugin
-var sass = require('gulp-sass');
+const sass = require('gulp-sass');
+/* const watchSass = require('gulp-watch-sass') */
 
 gulp.task('sass', function(){
   return gulp.src('app/sass/styles.scss')

@@ -1,5 +1,11 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+  }
+
 header{
-    margin: 35px 254px;
+    margin: 35px 20%;
     height: 136px;
     display: flex;
     flex-direction: column;
@@ -13,7 +19,7 @@ header{
     }
 
     .menu{
-        padding: 0 100px;;
+        padding: 0 5%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -24,14 +30,71 @@ header{
     font-size: 14px;
 }
 
+.bold{
+    font-weight: bold;
+}
+
 .big-font{
     font-size: 24px;
 }
 
-.imagem{
-    background-image: url('./imagens/banner-principal-1.png');
-    width: 400px;
-    height: 400px;
+.bigger-font{
+    font-size: 48px;
+}
+
+.red-font{
+    color: red;
+}
+
+.banner-container{
+    width: 100%;
+    height: 545px;
+
+    .banner{
+        background-image: url('../imagens//banner-principal-1.png');
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+
+        .conteudo-banner{
+            margin: 7% 20%;
+            position: absolute;
+            width: 30%;
+            height: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content:  space-between;
+
+            .subtítulo-banner{
+                margin: 40px 0;
+                color: #777777;
+            }
+
+            .botao-banner{
+                justify-self: baseline;
+                width: 40%;
+                height: 40px;
+                background-color: #333333;
+                color: white;
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .conteudo-botao-banner{
+                    position: absolute;
+                    width: 90%;
+                    height: 30px;
+                    border: 0.5px solid #777777;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+      }
 }
 
 .conteudo{
@@ -41,23 +104,79 @@ header{
     justify-content: center;
 
     .tendencias{
-        border: 1px solid black;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        height: 400px;
+        height: 600px;
 
-        .test{
-            width: 100px;
+        .tendencias-titulo{
+            align-self: center;
+        }
+
+        .tendencias-imagens{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            height: 600px;
+            position: relative;
+            border-bottom: 0.2px solid #dbdada;
+            margin-top: 30px;
+
+            //refatorar REPETICAO com @mixin e @include
+            .tendencia-container{
+                width: 50%;
+                margin: 2% 2%;
+                height: 220px;   
+                align-self: center;
+
+                .tendencia-item{
+                    width: 100%;
+                    height: 100%;
+                    background-position: center;
+                    background-size: cover;
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+
+                    .tendencia-titulo{
+                        padding-top: 20px;
+                        padding-left: 20px;
+                    }
+
+                    .tendencia-ver{
+                        padding-top: 10px;
+                        padding-left: 20px;
+                        color: #777777;
+                    }
+                }
+            }
+
+            .tendencia-container2{
+                width: 40%;
+                margin: 2% 2%;
+                height: 473px;   
+                align-self: center;
+
+                .tendencia-item{
+                    width: 100%;
+                    height: 100%;
+                    background-position: center;
+                    background-size: cover;
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+
+                    .tendencia-titulo{
+                        padding-top: 20px;
+                        padding-left: 20px;
+                    }
+
+                    .tendencia-ver{
+                        padding-top: 10px;
+                        padding-left: 20px;
+                        color: #777777;
+                    }
+                }
+            }
         }
     }
-}
-
-.meu{
-    background-image: url('../imagens/tendencia-3.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    width:200px;
-    height: 200px;
 }

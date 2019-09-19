@@ -6,33 +6,89 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <script src="./jquery.js"></script> 
+    <script> 
+        $(function(){
+            $("#includedContent").load("b.html"); 
+        });
+    </script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
+    
     <header>
+        
         <div class='superior'>
             <div class='medium-font'>11 4191 4399</div>
-            <div class='big-font'>AVIATO</div>
-            <div class='medium-font'>(0) - R$ 0,00</div>
+            <div class='big-font bold'>AVIATO</div>
+            <div class='medium-font'>(0) - <span class='bold'>R$ 0,00</span></div>
         </div>
+
         <div class='menu'>
-            <div>HOME</div>
+            <div class='bold'>HOME</div>
             <div>CAMISAS</div>
             <div>BLUSAS</div>
             <div>CALÇAS</div>
             <div>ACESSÓRIOS</div>
-            <div class='medium-font red-font'>OUTLET</div>
+            <div class='medium-font red-font bold'>OUTLET</div>
         </div>
+
     </header>
-    <img src='./imagens/banner-principal-1.png'  alt='banner' width=100%>
-    <div class='conteudo'>
-        <div class='tendencias'>
-            <div class='big-font'>TENDÊNCIAS</div>
-            <div class='tendencias-imagens'>
-                <div class='test'><img src='./imagens/tendencia-1.png'  alt='tendencia1'></div>
+
+    <div class='banner-container'>
+        <div class='banner'>
+            <div class='conteudo-banner'>
+                <div>
+                    <div class='bigger-font bold'>SUMMER COLLECTION</div>
+                    <div class='medium-font subtítulo-banner'>Separamos os melhores looks para você neste 2019</div>
+                </div>
+                <div class='botao-banner medium-font'>
+                    <div class='conteudo-botao-banner'>
+                        SHOP NOW
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <div class='meu'>
+
+    <div class='conteudo'>
+
+        <div class='tendencias'>
+            <div class='big-font bold tendencias-titulo'>TENDÊNCIAS</div>
+            <div class='tendencias-imagens'>
+                <div class='tendencia-container'>
+                    <div class='tendencia-item' style="background-image: url(./imagens/tendencia-1.png)">
+                        <div class='medium-font bold tendencia-titulo'>MEN DRESSES</div>
+                        <div class='medium-font tendencia-ver'>ver produtos></div>
+                    </div>
+                </div>      
+                <div class='tendencia-container'>
+                        <div class='tendencia-item' style="background-image: url(./imagens/tendencia-2.png)">
+                            <div class='medium-font bold tendencia-titulo'>JEWLLERY</div>
+                            <div class='medium-font tendencia-ver'>ver produtos></div>
+                        </div>
+                </div>       
+                <div class='tendencia-container2'>
+                        <div class='tendencia-item' style="background-image: url(./imagens/tendencia-3.png)">
+                            <div class='medium-font bold tendencia-titulo'>WOMEN DRESSES</div>
+                            <div class='medium-font tendencia-ver'>ver produtos></div>
+                        </div>
+                    </div>       
+            </div>
+        </div>
+
+        <div class='produtos'>
+            <div class='produtos-titulo big-font bold'>PRODUTOS</div>
+            <div class='produtos-container'>
+                <div class='produtos-item-container'>
+                    <div class='produtos-imagem'></div>
+                    <div class='produtos-texto'>
+                        <div class='produto-nome'></div>
+                        <div class='produto-valor'>R$ 150.55</div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
